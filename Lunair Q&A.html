@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lunair - שאלות נפוצות לבודקי בטא</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background */
+        }
+        .container {
+            max-width: 900px;
+        }
+        .faq-item {
+            background-color: white;
+            padding: 24px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 1px solid #e5e7eb;
+        }
+        .faq-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+        .question {
+            color: #1f2937; /* Dark text for question */
+            font-weight: 700;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .answer {
+            color: #4b5563; /* Medium text for answer */
+            margin-top: 12px;
+            border-top: 1px solid #f3f4f6;
+            padding-top: 12px;
+        }
+        .header {
+            background: linear-gradient(135deg, #4f46e5 0%, #a855f7 100%);
+            color: white;
+            padding: 40px 20px;
+            border-radius: 12px;
+            margin-bottom: 32px;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(79, 70, 229, 0.3);
+        }
+        .section-title {
+            color: #4f46e5; /* Violet color for section titles */
+            font-size: 1.75rem;
+            font-weight: 800;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #e0e7ff;
+            padding-bottom: 8px;
+        }
+        .tag-highlight {
+            background-color: #e0f2fe; /* Light blue background for tags */
+            color: #0369a1; /* Darker blue text */
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+        .icon {
+            color: #4f46e5;
+            font-size: 1.25rem;
+        }
+
+    </style>
+</head>
+<body class="p-4 sm:p-8">
+
+    <div class="container mx-auto">
+        
+        <header class="header">
+            <h1 class="text-4xl sm:text-5xl font-extrabold mb-2">Lunair - שאלות נפוצות</h1>
+            <p class="text-xl sm:text-2xl font-light">כל מה שצריך לדעת לבודקי הבטא</p>
+        </header>
+
+        <!-- גישה וניהול חשבון -->
+        <h2 class="section-title">✨ גישה וניהול חשבון</h2>
+        <div class="space-y-4">
+            <div class="faq-item">
+                <div class="question">
+                    <span>ש: איך מקבלים גישה לגרסת הבטא של Lunair?</span>
+                </div>
+                <div class="answer">
+                    <p>ת: כדי לקבל גישה וקרדיטים, צריך למלא <strong class="font-bold">טופס קצר</strong>. הקישור לטופס נמצא בתיאור הקבוצה ובהודעה המוצמדת.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="question">
+                    <span>ש: איך מקבלים עוד קרדיטים?</span>
+                </div>
+                <div class="answer">
+                    <p>ת: קרדיטים הם יקרים ולכן לא ניתן לחלק אותם באופן חופשי. כדי להשיג יותר קרדיטים אפשר:</p>
+                    <ul class="list-disc pr-5 mt-2 space-y-1">
+                        <li>לפרסם פוסט חיובי על Lunair <strong class="font-bold">בלינקדאין</strong> ולתייג את גיא מנצור, מה שיזכה אותך ב-<span class="tag-highlight">30 שניות</span>.</li>
+                        <li>לצרף <strong class="font-bold">שלושה אנשים</strong> לקבוצה כדי לקבל עוד <span class="tag-highlight">30 שניות</span>.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="question">
+                    <span>ש: האם אפשר לרכוש קרדיטים נוספים?</span>
+                </div>
+                <div class="answer">
+                    <p>ת: <strong class="font-bold">עדיין לא</strong>, אבל האפשרות הזו תהיה זמינה בקרוב. גיא אמר שהוא עובד על פתרון זמני עם PayPal שיגיע כנראה כבר השבוע, ולאחר החגים ייתכן שיהיה פתרון סליקה מסודר יותר.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- יצירת ועריכת סרטונים -->
+        <h2 class="section-title">🎬 יצירת ועריכת סרטונים</h2>
+        <div class="space-y-4">
+            <div class="faq-item">
+                <div class="question">
+                    <span>ש: האם אפשר לערוך את התסריט או לשנות את הקריינות לאחר שהסרטון נוצר?</span>
+                </div>
+                <div class="answer">
+                    <p>ת: <strong class="font-bold">נכון לעכשיו זה לא אפשרי</strong>. זהו פיצ'ר מבוקש מאוד אך הוא בעייתי, מכיוון ששינוי בתסריט ישפיע על כל שאר שלבי היצירה. גיא ציין כי זה יקח זמן לתמוך בזה.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="question">
+                    <span>ש: האם אפשר לשנות את הקריינות או את הקול שלה?</span>
+                </div>
+                <div class="answer">
+                    <p>ת: <strong class="font-bold">כרגע לא</strong> ניתן לשנות את הקול או את הטונציה לאחר יצירת הסרטון. עם זאת, בתחילת התהליך תוכלו לבחור את השפה בה תרצו שהסרטון יהיה.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="question">
+                    <span>ש: האם אפשר להעלות קבצים משלי, כמו PDF או תמונות?</span>
+                </div>
+                <div class="answer">
+                    <p>ת: אפשר להעלות קבצים משלך, כמו <strong class="font-bold">לוגו</strong>, בתחילת התהליך. כרגע <strong class="font-bold">לא ניתן</strong> להוסיף קבצים באופן ספציפי באמצע תהליך העריכה.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="question">
+                    <span>ש: למה הלוגו שלי נראה גרוע בסרטון?</span>
+                </div>
+                <div class="answer">
+                    <p>ת: כלי ה-AI <strong class="font-bold">מחדשים</strong> את הלוגו שהועלה. לוגואים עם <strong class="font-bold">הרבה פרטים קטנים או טקסט לא יעבדו טוב</strong>. ייתכן שתצטרך לנסות לוגו אחר או להשתמש ב"<span class="tag-highlight">prompt builder</span>" כדי לשפר את התוצאה.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="question">
+                    <span>ש: האם אפשר להוסיף כתוביות לסרטון?</span>
+                </div>
+                <div class="answer">
+                    <p>ת: <strong class="font-bold">לא ניתן</strong> ליצור סרטון עם כתוביות מובנות. הנגן באתר מוסיף כתוביות באופן אוטומטי, אך הן לא מופיעות בסרטון עצמו בעת ההורדה. פיצ'ר זה <strong class="font-bold">מתוכנן לעתיד</strong>.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="question">
+                    <span>ש: האם אפשר לבחור מוזיקת רקע או לשלוט על עוצמתה?</span>
+                </div>
+                <div class="answer">
+                    <p>ת: <strong class="font-bold">כרגע זה לא אפשרי</strong>. המוזיקה בדרך כלל מתאימה ואינה דורשת שינוי. אם הבעיה קריטית, אפשר לפנות לגיא באופן פרטי ולבקש עזרה.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- מידע כללי ופתרון בעיות -->
+        <h2 class="section-title">💡 מידע כללי ופתרון בעיות</h2>
+        <div class="space-y-4">
+            <div class="faq-item">
+                <div class="question">
+                    <span>ש: למה כפתור ה"הבא" לא עובד או שהפרויקט שלי נתקע?</span>
+                </div>
+                <div class="answer">
+                    <p>ת: כיוון שזוהי גרסת <strong class="font-bold">בטא</strong>, יש כמה באגים:</p>
+                    <ul class="list-disc pr-5 mt-2 space-y-1">
+                        <li><strong class="font-bold">כפתור "הבא" לא פעיל / נתקע:</strong> נסה <strong class="font-bold">לרענן את העמוד</strong> או לפתוח את האתר בחלון חדש. לפעמים זה קורה כשהתוכן מסומן כפוגעני בטעות.</li>
+                        <li><strong class="font-bold">הסרטון נתקע בשלב ההנפשה:</strong> פנה לגיא בהודעה פרטית עם שם הפרויקט והמייל שלך. ייתכן שתצטרך להתחיל פרויקט חדש ולבקש זיכוי קרדיטים.</li>
+                        <li>אם הבעיה היא לאחר עריכת סצנות, רענן את העמוד וכפתור ה"הבא" אמור לחזור.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="question">
+                    <span>ש: מה זה "prompt builder"?</span>
+                </div>
+                <div class="answer">
+                    <p>ת: זהו <strong class="font-bold">כלי שנועד לעזור לך לנסח את הפרומפט</strong> בצורה הטובה ביותר. מומלץ להשתמש בו כדי לקבל תוצאות טובות יותר עם פחות ניסיונות.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="question">
+                    <span>ש: איך ה-AI בוחר את הסגנון של הסרטון?</span>
+                </div>
+                <div class="answer">
+                    <p>ת: Lunair <strong class="font-bold">מתאימה את הסגנון באופן אוטומטי</strong> בהתאם לנושא ולתוכן. בהמשך, גיא מתכנן לאפשר למשתמשים לבחור את הסגנון בעצמם.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="question">
+                    <span>ש: איפה אפשר לשתף פידבק?</span>
+                </div>
+                <div class="answer">
+                    <p>ת: אפשר לשתף פידבק <strong class="font-bold">ישירות בקבוצה</strong>. אם יש לך פידבק מפורט או פרטי, אפשר לשלוח הודעה לגיא.</p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="text-center mt-12 py-6 text-gray-500 text-sm">
+            <p>Lunair Beta Testers | נשמח לשמוע את דעתכם! ✨</p>
+        </footer>
+
+    </div>
+</body>
+</html>
