@@ -3,4 +3,5 @@
 !vercel.json
 !.gitignore
 !.vercelignore
+!UPDATE-GUIDE.md
 .vercel
